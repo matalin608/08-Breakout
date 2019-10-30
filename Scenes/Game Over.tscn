@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/OstrichSans-Heavy.otf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[node name="Game Over" type="Node2D"]
+
+[node name="Message" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Message"]
+margin_left = 418.0
+margin_top = 269.0
+margin_right = 613.0
+margin_bottom = 335.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="Message"]
+margin_left = 444.639
+margin_top = 290.791
+margin_right = 587.639
+margin_bottom = 317.791
+custom_fonts/font = SubResource( 1 )
+text = "Game Over!"
+align = 1
